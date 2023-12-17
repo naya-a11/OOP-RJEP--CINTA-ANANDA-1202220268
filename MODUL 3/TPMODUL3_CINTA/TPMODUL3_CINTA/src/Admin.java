@@ -11,4 +11,4 @@ class Admin extends User {
     public String getUserDetails() {
         return super.getUserDetails() + "\nRole: Admin";
     }
-}
+}S

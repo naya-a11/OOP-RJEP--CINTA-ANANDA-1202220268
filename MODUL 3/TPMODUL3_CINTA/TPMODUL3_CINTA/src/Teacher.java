@@ -7,7 +7,6 @@ class Teacher extends User {
         System.out.println("Teaching " + course);
     }
 
-    @Override
     public String getUserDetails() {
         return super.getUserDetails() + "\nRole: Teacher";
     }

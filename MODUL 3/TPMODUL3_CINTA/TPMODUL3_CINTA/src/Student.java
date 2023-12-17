@@ -1,16 +1,20 @@
-public class Student extends User {
-    protected ArrayList<String> enrolledCourse;
+class Student extends User {
+    protected ArrayList<String> enrolledCourses;
 
     public Student(String name, int id) {
         super(name, id);
-        this.enrolledCourse = new ArrayList<>();
+        this.enrolledCourses = new ArrayList<>();
     }
+
     public void enrollInCourse(String course) {
-        enrolledCourse.add(course);
+        enrolledCourses.add(course);
     }
-    public String getUserDetails(){
-        return super.getUserDetails() + "\n Enrolled Course: " + enrolledCourse;
+
+    public ArrayList<String> getEnrolledCourses() {
+        return enrolledCourses;
+    }
+
+    public String getUserDetails() {
+        return super.getUserDetails() + "\nEnrolled Courses: " + getEnrolledCourses().toString();
     }
 }
-import java.util.InputMismatchException;
-import java.util.Scanner;

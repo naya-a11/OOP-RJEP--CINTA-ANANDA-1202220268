@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class User {
     protected String name;
     protected int id;
